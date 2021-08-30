@@ -6,6 +6,9 @@ nav ul {
 nav ul li {
     flex-basis: auto;
 }
+nav a {
+    padding: .5rem 1rem;
+}
 
 
 
