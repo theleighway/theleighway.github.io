@@ -1,7 +1,7 @@
 * { -moz-box-sizing: border-box;
 -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/* Paul indicated the the second hack wasn't needed in the small.css page becuase it was already
+/* Paul indicated that the second hack wasn't needed in the small.css page becuase it was already
 inluded in the normalize.css page. */
 
 /* body rules here*/
