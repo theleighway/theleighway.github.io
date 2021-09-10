@@ -42,7 +42,7 @@ section {
  */
 h1 {
   font-size: 2em;
-  
+  margin: 0.67em 0;
 }
 
 /* Grouping content
@@ -453,30 +453,32 @@ body {
 
 /* header rules here */
 div#headerWrapper {
-  background-color: #e4c517;
+  background-color: #AEED8C;
 }
 
 header {
   margin: 0;
   padding: 1rem 2%;
+  display: flex;
 }
 header img {
-  float: left;
-  padding-right: 15px;
+  height: 100px;
 }
 header h1 {
-  margin: 1.5rem 0 0 0;
+  margin: 2rem 0 0 0;
   font-weight: 700;
   color: black;
+  padding: 0 0 0 1rem;
 }
 header h2 {
   margin: 0;
   font-weight: 300;
+  padding: 0 0 0 1rem;
 }
 
 /* navigation rules here */
 div#navWrapper {
-  background-color: black;
+  background-color: #ed7576;
 }
 
 nav ul {
@@ -487,7 +489,7 @@ nav li {
   list-style-type: none;
 }
 nav li.active {
-  background-color: #333;
+  background-color: #e95b5b;
 }
 nav a {
   display: block;
@@ -511,40 +513,32 @@ main {
   display: block;
   background-color: white;
 }
-main figure.hero {
-  width: 100%;
-  margin: 0;
-  padding: 0px;
-}
-main div.mainScreen {
-  margin: 2%;
-}
-main figure {
-  width: 100%;
-}
-
-h1 {
+main h1 {
   color: #e4c517;
   font-weight: 700;
+  margin: 0 0 0 2%;
 }
-
-figure img {
-  width: 100%;
+main p {
+  margin: 0 0 0 2%;
 }
-
-figure {
-  width: 100%;
-  margin: 2%;
+main div.social {
+  background-color: lightcoral;
+  display: flex;
+  padding: .6rem 0;
 }
-
-figcaption {
+main div.social a {
+  flex-basis: 25%;
   text-align: center;
-  font-size: .8rem;
+  color: white;
+  font-size: 2.5rem;
+}
+main div.social a:hover {
+  color: orange;
 }
 
 /* footer rules here */
 div#footerWrapper {
-  background-color: #e4c517;
+  background-color: #AEED8C;
 }
 
 footer {
@@ -559,19 +553,6 @@ footer {
 
   nav ul li {
     flex-basis: 25%;
-  }
-
-  main figure {
-    float: right;
-    width: 48%;
-    margin-left: 2%;
-    padding-bottom: .5rem;
-  }
-
-  div.news {
-    clear: both;
-    column-count: 2;
-    column-rule: 1px solid #ddd;
   }
 }
 /* end of media query */
@@ -591,14 +572,6 @@ footer {
 
   nav a {
     padding: .5rem 1rem;
-  }
-
-  main figure {
-    width: 31%;
-  }
-
-  div.news {
-    column-count: 3;
   }
 }
 /* end of media query */
