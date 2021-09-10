@@ -90,7 +90,7 @@ main {
     h1 {
     color: $primaryColor;
     font-weight: $heavyWeight;
-    margin: 2%;
+    
     
     }
     figure img {
@@ -105,7 +105,8 @@ main {
     text-align: center;
     font-size: .8rem;
     }
-//end of main
+
+}//end of main
 
 /* footer rules here */
 div#footerWrapper {background-color: $primaryColor;}
