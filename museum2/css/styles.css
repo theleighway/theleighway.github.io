@@ -452,14 +452,12 @@ body {
 }
 
 /* header rules here */
-div#headerWrapper {
-  background-color: #AEED8C;
-}
-
 header {
   margin: 0;
   padding: 1rem 2%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 80px auto;
+  background-color: #AEED8C;
 }
 header img {
   height: 100px;
@@ -477,10 +475,9 @@ header h2 {
 }
 
 /* navigation rules here */
-div#navWrapper {
+nav {
   background-color: #ed7576;
 }
-
 nav ul {
   margin: 0;
   padding: 0;
@@ -504,10 +501,6 @@ nav a:hover {
 }
 
 /* main rules here */
-div#mainWrapper {
-  background-color: gray;
-}
-
 main {
   padding: 0;
   display: block;
@@ -535,13 +528,24 @@ main div.social a {
 main div.social a:hover {
   color: orange;
 }
-
-/* footer rules here */
-div#footerWrapper {
-  background-color: #AEED8C;
+main div.mainGallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+main div.mainGallery figure {
+  flex-basis: 46%;
+  margin: 1rem 2%;
+}
+main div.mainGallery figure img {
+  width: 100%;
+}
+main div.mainGallery figure figcaption {
+  text-align: center;
 }
 
+/* footer rules here */
 footer {
+  background-color: #AEED8C;
   text-align: center;
   padding: 1rem 2%;
 }
@@ -554,11 +558,15 @@ footer {
   nav ul li {
     flex-basis: 25%;
   }
+
+  main div.mainGallery figure {
+    flex-basis: 29%;
+  }
 }
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   nav, header, footer, main {
-    max-width: 75rem;
+    max-width: 71.25rem;
     margin: auto;
   }
 
@@ -572,6 +580,10 @@ footer {
 
   nav a {
     padding: .5rem 1rem;
+  }
+
+  main div.mainGallery figure {
+    flex-basis: 21%;
   }
 }
 /* end of media query */

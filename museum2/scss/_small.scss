@@ -16,11 +16,13 @@ body {
 }
 
 /* header rules here */
-div#headerWrapper {background-color: #AEED8C;}
+
 header {
     margin: 0;
     padding: 1rem 2%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 80px auto;
+    background-color: #AEED8C;
 
     img {
         height: 100px;
@@ -44,9 +46,9 @@ header {
 
 
 /* navigation rules here */
-div#navWrapper {background-color: rgb(237, 117, 118);}
+
 nav {
-    
+    background-color: rgb(237, 117, 118);
 
     ul {
     margin: 0;
@@ -71,7 +73,7 @@ nav {
     }
 } //end of main nav
 /* main rules here */
-div#mainWrapper {background-color: gray;}
+
 main {
     padding: 0;
     display: block;
@@ -101,13 +103,28 @@ main {
     div.social a:hover {
         color: orange;
     }
+    div.mainGallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div.mainGallery figure {
+        flex-basis: 46%;
+        margin: 1rem 2%;
+    }
+    div.mainGallery figure img {
+        width: 100%;
+    }
+    div.mainGallery figure figcaption {
+        text-align: center;
+    }
     
 
 }//end of main
 
 /* footer rules here */
-div#footerWrapper {background-color: #AEED8C;}
+
 footer {
+    background-color: #AEED8C;
     text-align: center;
     padding: 1rem $gutter;
     
