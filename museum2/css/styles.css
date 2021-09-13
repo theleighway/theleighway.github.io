@@ -485,8 +485,11 @@ nav ul {
 nav li {
   list-style-type: none;
 }
-nav li.active {
-  background-color: #e95b5b;
+nav ul li a {
+  background-color: #e74849;
+}
+nav ul li.active a {
+  background-color: #df1d1f;
 }
 nav a {
   display: block;
@@ -497,7 +500,7 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  background-color: #444;
+  background-color: #f08c8c;
 }
 
 /* main rules here */
@@ -507,7 +510,7 @@ main {
   background-color: white;
 }
 main h1 {
-  color: #e4c517;
+  color: #FCBA62;
   font-weight: 700;
   margin: 0 0 0 2%;
 }
@@ -515,7 +518,7 @@ main p {
   margin: 0 0 0 2%;
 }
 main div.social {
-  background-color: lightcoral;
+  background-color: #ed7576;
   display: flex;
   padding: .6rem 0;
 }
@@ -526,7 +529,7 @@ main div.social a {
   font-size: 2.5rem;
 }
 main div.social a:hover {
-  color: orange;
+  color: #FCBA62;
 }
 main div.mainGallery {
   display: flex;

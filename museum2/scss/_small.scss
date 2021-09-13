@@ -48,7 +48,7 @@ header {
 /* navigation rules here */
 
 nav {
-    background-color: rgb(237, 117, 118);
+    background-color: $menuColor;
 
     ul {
     margin: 0;
@@ -58,8 +58,11 @@ nav {
     li {
     list-style-type: none;
     }
-    li.active {
-    background-color: rgb(233, 91, 91);
+    ul li a {
+        background-color: darken($menuColor, 10%);
+    }
+     ul li.active a {
+        background-color: darken($menuColor, 20%);
     }
     a {
     display: block;
@@ -69,7 +72,7 @@ nav {
     text-decoration: none;
     }
     a:hover {
-    background-color: #444;
+    background-color: lighten($menuColor, 5%);
     }
 } //end of main nav
 /* main rules here */
@@ -88,7 +91,7 @@ main {
         margin: 0 0 0 2%;
     }
     div.social {
-        background-color: lightcoral;
+        background-color: $menuColor;
         display: flex;
         padding: .6rem 0;
         
@@ -101,7 +104,7 @@ main {
         
     }
     div.social a:hover {
-        color: orange;
+        color: $primaryColor;
     }
     div.mainGallery {
         display: flex;
