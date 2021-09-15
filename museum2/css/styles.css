@@ -463,6 +463,8 @@ header {
 header img {
   float: left;
   padding-right: 15px;
+  position: relative;
+  top: .7rem;
 }
 header h1 {
   margin: 2rem 0 0 0;
@@ -472,6 +474,10 @@ header h1 {
 header h2 {
   margin: 0;
   font-weight: 300;
+}
+header #title {
+  position: relative;
+  bottom: .5rem;
 }
 
 /* navigation rules here */
@@ -550,6 +556,14 @@ div#footerWrapper {
 footer {
   text-align: center;
   padding: 1rem 2%;
+}
+@media only screen and (max-width: 560px) {
+header h2 {
+  display: none;
+}
+
+
+
 }
 
 @media only screen and (min-width: 560px) {

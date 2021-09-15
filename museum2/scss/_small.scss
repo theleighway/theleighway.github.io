@@ -24,6 +24,8 @@ header {
     img {
         float: left;
         padding-right: 15px;
+        position: relative;
+        top: .7rem;
     }
     h1 {
         margin:2rem 0 0 0;
@@ -34,7 +36,13 @@ header {
         margin: 0;
         font-weight: $regularWeigth;
         
-    } //end of h2
+        } //end of h2
+
+    #title {
+         position: relative;
+         bottom: .5rem;
+     }
+
 
 
 } //end of header
