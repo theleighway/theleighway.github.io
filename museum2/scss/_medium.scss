@@ -1,5 +1,13 @@
 
 
+header {
+    h2 {
+        margin: 0;
+        font-weight: $regularWeigth;
+        
+    }
+}
+
 
 nav ul {
     display:flex;
@@ -7,16 +15,19 @@ nav ul {
 nav ul li {
     flex-basis: 25%;
 }
-main {
-    div.mainGallery figure {
-    flex-basis: 29%;
-    }
-    
+main figure {
+    float: right;
+    width: 48%;
+    margin-left: 2%;
+    padding-bottom: .5rem;
+
 }
 
-
-
-
+div.news {
+    clear: both;
+    column-count: 2;
+    column-rule: 1px solid #ddd;
+}
 
 
 

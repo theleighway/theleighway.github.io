@@ -2,7 +2,7 @@
 
 
 nav, header, footer, main {
-    max-width: 71.25rem;
+    max-width: 75rem;
     margin: auto;
 }
 
@@ -16,15 +16,13 @@ nav a {
     padding: .5rem 1rem;
 }
 
-main {
-    div.mainGallery figure {
-    flex-basis: 21%;
-    }
-    
+main figure {
+    width: 31%;
 }
 
-
-
+div.news {
+    column-count: 3;
+}
 
 
 

@@ -16,28 +16,24 @@ body {
 }
 
 /* header rules here */
-
+div#headerWrapper {background-color: $primaryColor;}
 header {
     margin: 0;
     padding: 1rem 2%;
-    display: grid;
-    grid-template-columns: 80px auto;
-    background-color: #AEED8C;
-
-    img {
-        height: 100px;
-    }
     
+    img {
+        float: left;
+        padding-right: 15px;
+    }
     h1 {
         margin:2rem 0 0 0;
         font-weight: $heavyWeight;
         color: black;
-        padding: 0 0 0 1rem;
     } //end of h1
     h2 {
         margin: 0;
         font-weight: $regularWeigth;
-        padding: 0 0 0 1rem;
+        
     } //end of h2
 
 
@@ -46,9 +42,9 @@ header {
 
 
 /* navigation rules here */
-
+div#navWrapper {background-color: black;}
 nav {
-    background-color: $menuColor;
+    
 
     ul {
     margin: 0;
@@ -58,11 +54,8 @@ nav {
     li {
     list-style-type: none;
     }
-    ul li a {
-        background-color: darken($menuColor, 10%);
-    }
-     ul li.active a {
-        background-color: darken($menuColor, 20%);
+    li.active {
+    background-color: #333;
     }
     a {
     display: block;
@@ -72,16 +65,28 @@ nav {
     text-decoration: none;
     }
     a:hover {
-    background-color: lighten($menuColor, 5%);
+    background-color: #444;
     }
 } //end of main nav
 /* main rules here */
-
+div#mainWrapper {background-color: gray;}
 main {
     padding: 0;
     display: block;
     background-color: white;
    
+
+    figure.hero {
+        width: 100%;
+        margin: 0;
+        padding: 0px;
+    }
+    
+
+    figure {
+        width: 100%;
+    }
+    
      h1 {
     color: $primaryColor;
     font-weight: $heavyWeight;
@@ -90,44 +95,27 @@ main {
     p {
         margin: 0 0 0 2%;
     }
-    div.social {
-        background-color: $menuColor;
-        display: flex;
-        padding: .6rem 0;
-        
+    .news {
+        margin: 0 2% 0 2%;
     }
-    div.social a {
-        flex-basis: 25%;
-        text-align: center;
-        color: white;
-        font-size: 2.5rem;
-        
-    }
-    div.social a:hover {
-        color: $primaryColor;
-    }
-    div.mainGallery {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    div.mainGallery figure {
-        flex-basis: 46%;
-        margin: 1rem 2%;
-    }
-    div.mainGallery figure img {
+    figure img {
         width: 100%;
-    }
-    div.mainGallery figure figcaption {
-        text-align: center;
-    }
     
+    }
+    figure {
+    width: 100%;
+    margin: 2%;
+    }
+    figcaption {
+    text-align: center;
+    font-size: .8rem;
+    }
 
 }//end of main
 
 /* footer rules here */
-
+div#footerWrapper {background-color: $primaryColor;}
 footer {
-    background-color: #AEED8C;
     text-align: center;
     padding: 1rem $gutter;
     
