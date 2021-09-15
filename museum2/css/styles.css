@@ -558,12 +558,9 @@ footer {
   padding: 1rem 2%;
 }
 @media only screen and (max-width: 560px) {
-header h2 {
-  display: none;
-}
-
-
-
+  header h2 {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 560px) {
