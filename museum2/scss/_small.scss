@@ -1,77 +1,122 @@
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
-
-/*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-
-/*----------- BODY --------------*/
-body {
-    font-size: 16px;
-    font-family: Verdana, sans-serif;
-}
-
-
-/*----------- HEADER --------------*/
-header {
-    padding: .5rem 2%;
-    background-color: #ddd;
-}
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: normal;}
-
-/*----------- NAVIGATION --------------*/
-nav {
-    background-color: #666;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
+* { -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box; box-sizing: border-box; }
+* {
     margin: 0;
 }
-nav ul li {
-    float: left;
-    width: 25%;
+/* Paul indicated that the second hack wasn't needed in the small.css page becuase it was already
+inluded in the normalize.css page. */
+
+/* body rules here*/
+
+body {
+    font-family: $fontFamily;
+    font-size: 16px;
+    font-weight: $regularWeigth;
+
 }
-nav ul li a {
+
+/* header rules here */
+div#headerWrapper {background-color: $primaryColor;}
+header {
+    margin: 0;
+    padding: 1rem 2%;
+    
+    img {
+        float: left;
+        padding-right: 15px;
+    }
+    h1 {
+        margin:2rem 0 0 0;
+        font-weight: $heavyWeight;
+        color: black;
+    } //end of h1
+    h2 {
+        margin: 0;
+        font-weight: $regularWeigth;
+        
+    } //end of h2
+
+
+} //end of header
+ 
+
+
+/* navigation rules here */
+div#navWrapper {background-color: black;}
+nav {
+    
+
+    ul {
+    margin: 0;
+    padding: 0;
+    
+    }
+    li {
+    list-style-type: none;
+    }
+    li.active {
+    background-color: #333;
+    }
+    a {
     display: block;
-    background-color: #444;
+    padding: .8rem 0; /* 44 min height */
     color: #eee;
-    border-left: 1px solid #777;
-    padding: .5rem 0;
+    text-align: center;
     text-decoration: none;
-    font-size: .9rem;
-    text-align: center;
-}
-nav ul li:first-child a {border-left: none;}
-
-nav ul li a:hover {
-    background-color: #eee;
-    color: #333;
-}
-nav ul li.active a {
-    background-color: #000;
-    color: #fff;
-}
-/*----------- MAIN --------------*/
+    }
+    a:hover {
+    background-color: #444;
+    }
+} //end of main nav
+/* main rules here */
+div#mainWrapper {background-color: gray;}
 main {
-    padding: 0 2%;
-    min-height: 10rem;
-}
+    padding: 0;
+    display: block;
+    background-color: white;
+   
 
+    figure.hero {
+        width: 100%;
+        margin: 0;
+        padding: 0px;
+    }
+    
 
-/*----------- FOOTER --------------*/
-footer {
-    background-color: #ddd;
-    padding: .5rem 2%;
+    figure {
+        width: 100%;
+    }
+    
+     h1 {
+    color: $primaryColor;
+    font-weight: $heavyWeight;
+    margin: 0 0 0 2%;
+    }
+    p {
+        margin: 0 0 0 2%;
+    }
+    .news {
+        margin: 0 2% 0 2%;
+    }
+    figure img {
+        width: 100%;
+    
+    }
+    figure {
+    width: 100%;
+    margin: 2%;
+    }
+    figcaption {
     text-align: center;
-}
+    font-size: .8rem;
+    }
 
+}//end of main
 
-
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+/* footer rules here */
+div#footerWrapper {background-color: $primaryColor;}
+footer {
+    text-align: center;
+    padding: 1rem $gutter;
+    
 }

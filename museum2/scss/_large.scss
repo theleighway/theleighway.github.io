@@ -1,23 +1,30 @@
-header, nav, main, footer {
-        max-width: 64rem;
-        margin:auto;
+
+
+
+nav, header, footer, main {
+    max-width: 75rem;
+    margin: auto;
 }
 
-/*----------- BODY --------------*/
+nav ul {
+    padding-left: $gutter;
+}
+nav ul li {
+    flex-basis: auto;
+}
+nav a {
+    padding: .5rem 1rem;
+}
+
+main figure {
+    width: 31%;
+}
+
+div.news {
+    column-count: 3;
+}
 
 
 
-/*----------- HEADER --------------*/
 
 
-
-/*----------- NAVIGATION --------------*/
-
-
-
-/*----------- MAIN --------------*/
-
-
-
-/*----------- FOOTER --------------*/
-    

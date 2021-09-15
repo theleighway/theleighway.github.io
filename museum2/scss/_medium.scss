@@ -1,25 +1,37 @@
 
 
-
-/*----------- BODY --------------*/
-
-
-
-/*----------- HEADER --------------*/
-
-
-
-/*----------- NAVIGATION --------------*/
-    nav ul {margin-left: 2%;}
-    nav ul li {width: auto;}
-    nav ul li:first-child a {border-left: 1px solid #777;}
-    nav ul li:last-child a {border-right: 1px solid #777;}
-    nav ul li a{padding: .5rem 1rem;}
+header {
+    h2 {
+        margin: 0;
+        font-weight: $regularWeigth;
+        
+    }
+}
 
 
-/*----------- MAIN --------------*/
+nav ul {
+    display:flex;
+}
+nav ul li {
+    flex-basis: 25%;
+}
+main figure {
+    float: right;
+    width: 48%;
+    margin-left: 2%;
+    padding-bottom: .5rem;
+
+}
+
+div.news {
+    clear: both;
+    column-count: 2;
+    column-rule: 1px solid #ddd;
+}
 
 
 
-/*----------- FOOTER --------------*/
-    
+
+
+
+
