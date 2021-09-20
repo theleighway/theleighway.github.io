@@ -383,7 +383,7 @@ header h2 {
 
 /*----------- NAVIGATION --------------*/
 div#navWrapper {
-  background-color: #666;
+  background-color: black;
 }
 
 nav ul {
@@ -418,13 +418,13 @@ nav ul li a:hover {
 }
 
 nav ul li.active a {
-  background-color: #000;
+  background-color: #A35927;
   color: #fff;
 }
 
 /*----------- MAIN --------------*/
 div#mainWrapper {
-  background-color: gray;
+  background-color: #A35927;
 }
 
 main {
@@ -438,9 +438,72 @@ h1 {
   padding-top: 2rem;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.card:hover img {
+  animation: bounce 1.5s 1;
+}
+
+.card {
+  flex-basis: 100%;
+  border: 1px solid #999;
+  border-radius: 10px;
+  margin: 1rem 1%;
+  text-align: center;
+}
+.card section {
+  background-color: #555;
+  color: white;
+  padding: 1rem 0;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+.card img {
+  padding: 1rem;
+  position: relative;
+}
+@keyframes bounce {
+  0% {
+    bottom: 0px;
+    animation-timing-function: ease-out;
+  }
+  25% {
+    bottom: 20px;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    bottom: 0px;
+    animation-timing-function: ease-out;
+  }
+  75% {
+    bottom: 10px;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+.card p {
+  padding: 1rem 2vw;
+}
+.card a {
+  display: block;
+  background-color: crimson;
+  color: white;
+  padding: 1rem;
+  margin: 1rem 4vw;
+  border-radius: 10px;
+}
+.card a:hover {
+  background-color: #ed365b;
+}
+
 /*----------- FOOTER --------------*/
 div#footerWrapper {
-  background-color: #ddd;
+  background-color: black;
 }
 
 footer {
@@ -485,12 +548,16 @@ footer {
   }
 
   /*----------- MAIN --------------*/
+  main .card {
+    flex-basis: 48%;
+  }
+
   /*----------- FOOTER --------------*/
 }
 /* end of media query */
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
-    max-width: 64rem;
+    max-width: 60rem;
     margin: auto;
   }
 
@@ -505,6 +572,10 @@ footer {
 
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
+  main .card {
+    flex-basis: 31.333%;
+  }
+
   /*----------- FOOTER --------------*/
 }
 /* end of media query */
