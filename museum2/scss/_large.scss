@@ -1,5 +1,5 @@
 header, nav, main, footer {
-        max-width: 60rem;
+        max-width: 64rem;
         margin:auto;
 }
 
@@ -8,12 +8,7 @@ header, nav, main, footer {
 
 
 /*----------- HEADER --------------*/
-div#headerWrapper {
-        background-image: url(/museum2/images/header-large.jpg);
-        height: 400px;
-        background-size: cover;
-        background-position: center bottom;
-    }
+
 
 
 /*----------- NAVIGATION --------------*/
@@ -21,9 +16,7 @@ div#headerWrapper {
 
 
 /*----------- MAIN --------------*/
-main {
-        .card {flex-basis: 31.333%;}
-    }
+
 
 
 /*----------- FOOTER --------------*/
