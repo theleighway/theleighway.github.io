@@ -45,11 +45,13 @@
     
 <!-- CONTENT HERE -->
     <main>
-        <img src="images/ramen5.jpg" alt="Ramen" sizes="100vw" 
-        srcset="images/ramen4.jpg 450w,
-        images/ramen3.jpg 600w,
-        images/ramen2.jpg 750w
-        images/ramen.jpg 900w">
+        <picture class="photoA">
+            <source media="(max-width: 450px)" srcset="images/ramen5.jpg">
+            <source media="(max-width: 600px)" srcset="images/ramen4.jpg">
+            <source media="(max-width: 750px)" srcset="images/ramen3.jpg">
+            <source media="(max-width: 900px)" srcset="images/ramen2.jpg">
+            <img id="hero" src="images/ramen.jpg" alt="Ramen">
+        </picture>
         <h1>Products</h1>
         <p>The page name should almost exactly match the menu item. </p>
     </main>
