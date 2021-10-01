@@ -15,7 +15,7 @@ body {
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #ddd;
+    background-color: tan;
    
     
 }
@@ -30,7 +30,7 @@ header figure.logo {
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #666;
+    background-color: rgb(129, 0, 0);
 }
 nav ul {
     list-style-type: none;
@@ -43,9 +43,9 @@ nav ul li {
 }
 nav ul li a {
     display: block;
-    background-color: #444;
+    background-color: rgb(129, 0, 0);
     color: #eee;
-    border-left: 1px solid #777;
+    border-left: 1px solid white;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
@@ -67,9 +67,34 @@ main {
     padding: 0;
     min-height: 10rem;
 }
-
+picture.photoA {
+    display: block;
+    width: 100%;
+    
+}
 #hero {
-    max-width: 64rem;
+    width: 100%;
+}
+
+picture.photoB {
+    display: block;
+    float: right;
+    width: 50%; 
+    margin-left: 2%;  
+    
+}
+
+
+
+
+
+
+
+
+
+.founder-info {
+    margin: 0 2%;
+    
 }
 
 
