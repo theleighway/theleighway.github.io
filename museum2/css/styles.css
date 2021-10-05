@@ -354,13 +354,14 @@ html {
 /*----------- BODY --------------*/
 body {
   font-size: 16px;
-  font-family: Verdana, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  background-color: black;
 }
 
 /*----------- HEADER --------------*/
 header {
   padding: .5rem 2%;
-  background-color: tan;
+  background-color: #E89D2D;
 }
 
 header h1 {
@@ -380,12 +381,14 @@ header figure.logo {
 /*----------- NAVIGATION --------------*/
 nav {
   background-color: #810000;
+  border: none;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  border: none;
 }
 
 nav ul li {
@@ -396,12 +399,13 @@ nav ul li {
 nav ul li a {
   display: block;
   background-color: #810000;
-  color: #eee;
-  border-left: 1px solid white;
+  color: white;
+  border-left: 1px solid #810000;
   padding: .5rem 0;
   text-decoration: none;
   font-size: .9rem;
   text-align: center;
+  border: none;
 }
 
 nav ul li:first-child a {
@@ -409,12 +413,12 @@ nav ul li:first-child a {
 }
 
 nav ul li a:hover {
-  background-color: #eee;
-  color: #333;
+  background-color: #be0000;
+  color: white;
 }
 
 nav ul li.active a {
-  background-color: #000;
+  background-color: #b40000;
   color: #fff;
 }
 
@@ -422,6 +426,7 @@ nav ul li.active a {
 main {
   padding: 0;
   min-height: 10rem;
+  background-color: white;
 }
 
 picture.photoA {
@@ -446,7 +451,7 @@ picture.photoB {
 
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #ddd;
+  background-color: tan;
   padding: .5rem 2%;
   text-align: center;
 }
