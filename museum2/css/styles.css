@@ -447,6 +447,7 @@ picture.photoB {
 
 picture.photoB img {
   max-width: 552px;
+  width: 100%;
 }
 
 .founder-info {

@@ -82,26 +82,23 @@ picture.photoA {
     width: 100%;
 }
 
+
+
+
 picture.photoB {
     display: block;
     float: right;
     width: 46%; 
-    margin: 0 2%;  
+    margin: 0 2%;
+     
 }
 
-picture.photoB img {
-    max-width: 552px;
+ picture.photoB img {
+   max-width: 552px;
+    
+    width: 100%;
 
 }
-
-
-
-
-
-
-
-
-
 
 
 .founder-info {
