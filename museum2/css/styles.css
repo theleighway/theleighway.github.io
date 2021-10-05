@@ -441,8 +441,12 @@ picture.photoA {
 picture.photoB {
   display: block;
   float: right;
-  width: 50%;
-  margin-left: 2%;
+  width: 46%;
+  margin: 0 2%;
+}
+
+picture.photoB img {
+  max-width: 552px;
 }
 
 .founder-info {
