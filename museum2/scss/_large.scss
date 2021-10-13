@@ -18,6 +18,26 @@ header, nav, main, footer {
 /*----------- MAIN --------------*/
 
 
+main section.members div {
+        
+        margin: 1rem 2%;
+        flex-basis: 21%;
+    }
+
+    section.galary figure {
+        width: 100%;
+        height: 0;
+        padding-bottom: 58%;
+        position: relative;
+        margin: 0;
+    }
+    section.galary figure img {
+        padding: 0 2%;
+        width: 100%;
+        height: auto;
+        position: absolute;
+    }
+
 
 /*----------- FOOTER --------------*/
     

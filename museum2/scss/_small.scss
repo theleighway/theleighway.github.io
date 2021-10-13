@@ -8,32 +8,28 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    background-color: black;
-    
+    font-family: Verdana, sans-serif;
+    background: linear-gradient(#591902, black 60%);
+
 }
-
-
 /*----------- HEADER --------------*/
 header {
-    padding: .5rem 2%;
-    background-color: #E89D2D;
-   
-    
+    padding: 0 2%;
+    background-color: #591902;
+    color: #F28705;
 }
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: normal;}
-header figure.logo {
-    float: left;
-    margin: 0 2% 0 0;
+header h1 {
+    margin: 2rem 0 0 0;
+
 }
-
-
+header h2 {
+    margin: 0 0 2rem 0;
+    font-weight: normal;
+}
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: rgb(129, 0, 0);
-    border: none;
+    background-color: black;
 }
 nav ul {
     list-style-type: none;
@@ -47,72 +43,103 @@ nav ul li {
 }
 nav ul li a {
     display: block;
-    background-color: rgb(129, 0, 0);
-    color: white;
-    border-left: 1px solid rgb(129, 0, 0);
+    background-color: black;
+    color: #eee;
+    border: none;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
     text-align: center;
-    border: none;
 }
 nav ul li:first-child a {border-left: none;}
 
 nav ul li a:hover {
-    background-color: rgb(190, 0, 0);
+    background-color: #591902;
     color: white;
 }
 nav ul li.active a {
-    background-color: rgb(180, 0, 0);
+    background-color: #000;
     color: #fff;
 }
 /*----------- MAIN --------------*/
 main {
-    
     padding: 0;
     min-height: 10rem;
-    background-color: white;
+    background-color: black;
+    color: white;
 }
-picture.photoA {
-    display: block;
-    width: 100%;
-    
-}
-#hero {
-    width: 100%;
+main h1 {
+    margin: 0 2%;
+    padding: 1rem 0;
 }
 
+section.galary h2 {
+    margin: 1rem 2%;
+}
 
 
-
-picture.photoB {
-    display: block;
+figure#singer img{
     float: right;
-    width: 46%; 
-    margin: 0 2%;
-     
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    margin: .5rem;
 }
 
- picture.photoB img {
-   max-width: 552px;
+figure#guitar img{
+    float: right;
+    shape-outside: circle(100% at 100% 100%);
+    clip-path: circle(100% at 100% 0%);
+    margin: .5rem;
+}
+
+figure#base img{
+    float: left;
+    shape-outside: polygon(0 0, 100% 0, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    margin: .5rem;
+}
+
+figure#drummer img{
+    float: right;
+    shape-outside: polygon(0 0, 100% 0%, 50% 100%);
+    clip-path: polygon(0 0, 100% 0%, 50% 100%);
+    margin: .5rem;
+}
+
+main section.members {
+    display: flex;
+    flex-wrap: wrap;
     
+
+}
+main section.members div {
+    margin: 1rem 2%;
+    flex-basis: 96%;
+}
+.members figure img {
+    width: 150px;
+}
+
+section.galary figure {
     width: 100%;
-
+    height: 0;
+    padding-bottom: 60%;
+    position: relative;
+    margin: 0;
 }
-
-
-.founder-info {
-    margin: 0 2%;
-    
+section.galary figure img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin: 0;
 }
 
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: rgb(129, 0, 0);
+    background-color: #ddd;
     padding: .5rem 2%;
     text-align: center;
-    color: white;
 }
 
 
