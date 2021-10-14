@@ -442,7 +442,7 @@ figure#singer img {
 
 figure#guitar img {
   float: right;
-  shape-outside: circle(100% at 100% 100%);
+  shape-outside: circle(50% at 50%);
   clip-path: circle(100% at 100% 0%);
   margin: .5rem;
 }
