@@ -1,0 +1,26 @@
+header, nav, footer {
+    width: 100%;
+    
+}
+main {
+    max-width: 80rem;
+    margin: auto;
+}
+
+nav ul li a {
+    padding: .6rem 1rem;
+}
+
+div.storyGrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .lead {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+    }
+}
+
+section.footerlinks {
+    padding-left: 1.7rem;
+    grid-template-columns: 25% 25% 25% 25%;
+    
+}
