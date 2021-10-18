@@ -1,0 +1,16 @@
+div#headerWrapper, header, nav, main, footer {
+    max-width: 64rem;
+    margin: auto;
+    
+}
+div#headerWrapper {
+    background-image: url(/images/boston-header-large200.jpg);
+    height: 200px;
+    
+   
+}
+
+nav ul li a {
+    padding: .6rem 1rem;
+}
+
