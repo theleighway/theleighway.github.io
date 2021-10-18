@@ -46,7 +46,11 @@
 <!-- CONTENT HERE -->
     <main>
     <h1>Breaking News</h1>
-    
+    <div class="my_slider">
+        <div>Slider Stuff</div>
+        <div>Slider Stuff</div>
+        <div>Slider Stuff</div>
+    </div>
     
     </main>
     
@@ -59,5 +63,21 @@
     </footer>
     
 <script src="js/scripts.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script>
+    $(documment).ready(function() {
+        $('.my_slider').slick ({
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 1000,
+            cssEase: 'ease-out',
+            autoplay: true,
+            autoplaySpeed: 30000
+    });
+});
+
+</script>
 </body>
 </html>
