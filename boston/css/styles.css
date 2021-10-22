@@ -447,6 +447,72 @@ nav ul.hide {
 main h1 {
   margin: 1rem 2%; }
 
+picture {
+  position: relative; }
+
+picture div {
+  position: absolute;
+  bottom: 4px;
+  color: white;
+  background-color: black;
+  opacity: 55%;
+  width: 100%; }
+
+div.cards {
+  display: flex;
+  flex-wrap: wrap;
+  columns: 4; }
+
+div:nth-child(1) {
+  background-image: url("../images/hotel.jpeg"); }
+
+div:nth-child(1) a {
+  background-color: #3D4F73; }
+
+div:nth-child(2) {
+  background-image: url("../images/redline.jpeg"); }
+
+div:nth-child(2) a {
+  background-color: #BF6F6F; }
+
+div:nth-child(3) {
+  background-image: url("../images/bostoncity.jpeg"); }
+
+div:nth-child(3) a {
+  background-color: #898C27; }
+
+div:nth-child(4) {
+  background-image: url("../images/dining.jpeg"); }
+
+div:nth-child(4) a {
+  background-color: #D99E30; }
+
+div.cards div a {
+  display: block;
+  width: 100%;
+  height: 256px;
+  text-decoration: none;
+  padding: 0 2%;
+  transition: all .5s ease-in; }
+
+div.cards img {
+  width: 75px;
+  margin-top: 4.7rem;
+  margin-left: 5.7rem; }
+
+div a:hover {
+  background: none;
+  text-shadow: 0 0 4px black; }
+
+.cards div h3 {
+  color: white;
+  margin-top: 2em;
+  margin-left: 4rem; }
+
+.cards div {
+  margin: 0;
+  width: 256px; }
+
 footer {
   background-color: #31508a;
   color: white;
@@ -693,7 +759,10 @@ footer {
 
   section.footerlinks {
     padding-left: .5rem;
-    grid-template-columns: 50% 50%; } }
+    grid-template-columns: 50% 50%; }
+
+  div.cards {
+    columns: 2; } }
 /* end of media query */
 @media only screen and (min-width: 60rem) {
   div#headerWrapper, header, nav, main, footer {
