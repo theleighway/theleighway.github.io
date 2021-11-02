@@ -30,11 +30,21 @@
     
 <!-- NAVIGATION HERE -->
     <nav class="clearfix">
-        <ul >
+        <button id="bamburgerBtn">
+            <span>&equiv;OPEN</span>
+            <span>&otimes;CLOSE</span>
+        </button>
+        <ul id="primaryNav">
             <li><a href="#">About</a></li>
-            <li class="active"><a href="#">Propose</a></li>
+            <li class="current-menu-item"><a href="#">Propose</a></li>
             <li><a href="#">Winners</a></li>
-            <li><a href="#">Contact</a></li>    
+            <li class="parent"><a href="#">Contact</a>
+                <ul>
+                    <li><a href="#">Oil Change</a></li>
+                    <li><a href="#">Front End</a></li><li></li>
+                </ul> 
+            </li>
+            <li><a href="#">Request an Appointment</a></li>   
         </ul>
     </nav>
     
@@ -71,7 +81,7 @@
         <label class="top">Anticipated Completion Date<input type="date" name="completedDate"></label>
         <label class="top">Course Subject
             <select name="subject">
-                <option value="">Please Select</option>
+                <option value="">Please Select &#9662;</option>
                 <option value="software">Software Development</option>
                 <option value="creative">Creative </option>
                 <option value="software">Software Development</option>
